@@ -4,8 +4,10 @@ import './MainVocabularyReminder.css';
 export default function MainVocabularyReminder (){
     return(
     <div className="vocabulary-reminder-block"> 
-        <button className="find-button">Review Words</button>
-        <div> MainVocabularyReminder </div>
+        <form className="review-words">
+            <button className="find-button">Review Words</button>
+        </form>
+        <div class="button-text"> It's time to review your vocabulary </div>
    
         <table class="table table-striped table-dark">
             <thead>

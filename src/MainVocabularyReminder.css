@@ -10,3 +10,12 @@
     padding: 1.5rem;
     position: relative;
 }
+.find-button{
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.button-text{
+    color: blue;
+    font-size: 12px;
+    padding: 10px;
+}
