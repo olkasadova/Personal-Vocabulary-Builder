@@ -7,9 +7,9 @@ export default function MainVocabularyReminder (){
         <form className="review-words">
             <button className="find-button">Review Words</button>
         </form>
-        <div class="button-text"> It's time to review your vocabulary </div>
+        <div className="button-text"> It's time to review your vocabulary </div>
    
-        <table class="table table-striped table-dark">
+        <table className="table table-striped table-dark">
             <thead>
             <tr>
                 <th scope="col">#</th>

@@ -1,9 +1,10 @@
 import './App.css';
 import Header from "./Header";
 import Footer from "./Footer";
-import Top_menu from "./Top_menu";
+import TopMenu from "./TopMenu";
 import MainVocabularyReminder from "./MainVocabularyReminder";
 import MainLearningEffectively from "./MainLearningEffectively";
+import WordCardBlock from "./WordCardBlock";
 
 
 function App() {
@@ -11,9 +12,10 @@ function App() {
     <div className="App">
       <div className="container"> 
         <Header />
-        <Top_menu />
+        <TopMenu />
         <MainLearningEffectively />
         <MainVocabularyReminder />
+        <WordCardBlock />
         <Footer />
       </div>
     </div>
