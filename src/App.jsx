@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import './App.css';
-import Header from "./Header";
-import Footer from "./Footer";
-import TopMenu from "./TopMenu";
-import MainVocabularyReminder from "./MainVocabularyReminder";
-import MainLearningEffectively from "./MainLearningEffectively";
-import WordCardBlock from "./WordCardBlock";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
+import TopMenu from './Components/TopMenu/TopMenu';
+import MainVocabularyReminder from "./Components/MainVocabularyReminder/MainVocabularyReminder";
+import MainLearningEffectively from "./Components/MainLearningEffectively/MainLearningEffectively";
+import WordCardBlock from "./Components/WordCardBlock/WordCardBlock";
 
 
 function App() {
@@ -42,6 +42,7 @@ useEffect(() => {
     setCard(JSON.parse(localCard));
   }
  }, [setCard]);
+
  useEffect(() => {
   const localCard = localStorage.getItem("card");
   if (!localCard) {
@@ -53,7 +54,7 @@ useEffect(() => {
   return (
     <div className="App">
       <div className="container"> 
-        <Header />
+        <Header user="Olha"/>
         <TopMenu />
         <MainLearningEffectively />
         <MainVocabularyReminder  card={card}/>
