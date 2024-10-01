@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "word": "Ocean",
+        "description": "A large body of salt water that covers most of the Earth's surface.",
+        "synonyms": ["sea ", "deep ", "blue "],
+        "book":"Never Let me Go"
+    },
+    {
+        "id": 2,
+        "word": "Mountain",
+        "description": "A natural elevation of the Earth's surface rising abruptly from the surrounding area.",
+        "synonyms": ["hill ", "peak ", "summit "],
+        "book":"Never Let me Go"
+    },
+    {
+        "id": 3,
+        "word": "Forest",
+        "description": "A large area covered chiefly with trees and undergrowth.",
+        "synonyms": ["woodland ", "jungle ", "rainforest "],
+        "book":"Thousand Splendid Suns"
+    },
+    {
+        "id": 4,
+        "word": "Desert",
+        "description": "A barren area of land where little precipitation occurs and living conditions are hostile for plant and animal life.",
+        "synonyms": ["wasteland ", "barren ", "arid "],
+        "book":"Thousand Splendid Suns"
+    },
+    {
+        "id": 5,
+        "word": "River",
+        "description": "A natural stream of water flowing in a channel to the sea, a lake, or another river.",
+        "synonyms": ["stream ", "creek ", "brook "],
+        "book":"Thousand Splendid Suns"
+    }
+]
