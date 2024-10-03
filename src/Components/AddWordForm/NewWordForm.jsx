@@ -1,5 +1,6 @@
 import React from "react";
 import './NewWordForm.css';
+import {useState, useEffect} from "react";
 
 export default function NewWordForm (){
 
@@ -17,7 +18,6 @@ export default function NewWordForm (){
         console.log(newWord); 
         
         }
-   
     
     return(
      
@@ -52,7 +52,7 @@ export default function NewWordForm (){
                     <option value="Thousand Splendid Suns">Thousand Splendid Suns</option>
                     <option value="Never Let Me Go">Never Let Me Go</option>    
             </select>
-           
+            <button className="get-word-data-button" > Get Word Description </button>
             <button className="add-to-vocabulary-button" > Add to Vocabulary </button>
             
         </form>
