@@ -1,21 +1,21 @@
 import {Locator, expect, Page } from "@playwright/test";
+import { BasePage } from "./basePage";
+import Header from "./header";
+import WordCardBlock from "./wordCardBlock";
 
-export class HomePage{
-    page: Page;
-    addYourWordsLink: Locator;
-    userName: Locator;
-    aboutLink: Locator;
-    buttonSynonyms: Locator;
+
+export default class HomePage extends BasePage{
+    header: Header;
+    wordCardBlock: WordCardBlock;
+    
 
     constructor (page:Page){
-        this.page = page;
-        this.userName = page.locator('h2', {hasText: 'Welcome Olha'});
-        this.addYourWordsLink = page.locator ('a', {hasText: 'Add Your Words'});
-        this.aboutLink = page.locator (('li a'), {hasText: 'About'});
-        this.buttonSynonyms = page.locator('button', {hasText: 'View synonyms'}).first();
+        super(page);
+        this.header = new Header(page);
+        this.wordCardBlock = new WordCardBlock(page);
     }
 
     async goHome(){
-        await this.page.goto ('http://localhost:3002/');
+        await this.page.goto ('http://localhost:3000/');
     }
 }
