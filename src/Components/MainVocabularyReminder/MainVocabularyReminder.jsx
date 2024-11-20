@@ -1,11 +1,13 @@
 import React from "react";
 import './MainVocabularyReminder.css';
 
-export default function MainVocabularyReminder ({cards}){
+import data from './../../words.json';
+
+export default function MainVocabularyReminder ({change}){
     return(
     <div className="vocabulary-reminder-block"> 
         <form className="review-words">
-            <button className="find-button">Review Words</button>
+            <button onClick = {(e)=> {e.preventDefault(); change(data)}} className="find-button">Review Words</button>
         </form>
         <div className="button-text"> It's time to review your vocabulary </div>
    

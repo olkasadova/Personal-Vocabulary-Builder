@@ -42,14 +42,14 @@ const Modal = ({ show, handleClose, content }) => {
     );
 }
 
-export default function WordCardBlock ({data}){
-    const[words, setWords] = React.useState(data);
+export default function WordCardBlock ({displayData}){
+    
     const[urlSyn, setUrlSyn] = React.useState(""); //could be dictionary api
     const[urlDesc, setUrlDesc] = React.useState(""); //could be dictionary api
     const[urlExamples, setUrlExamples] = React.useState(""); //could be dictionary api
     const[DescButton, setDescButton] = React.useState("View Description");
-    const [showModal, setShowModal] = useState(false);
-    const [modalContent, setModalContent] = useState("");
+    const[showModal, setShowModal] = useState(false);
+    const[modalContent, setModalContent] = useState("");
 
     const OnSynonymsClick = async (word) => {
         const urlSyn = await getSynonymsAPI(word);
@@ -81,7 +81,7 @@ export default function WordCardBlock ({data}){
     <div className="word-card-container">   
         <div className="cards-container"> 
             {
-                words.map((card, index) => (
+                displayData.map((card, index) => (
                     
                         <div key={index} className="word-card">
                             <h1 className="word-title"> {card.word} </h1>  
