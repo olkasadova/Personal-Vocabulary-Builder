@@ -5,13 +5,13 @@ name: Node.js CI
 
 on:
   push:
-    branches: ["master"]
+    branches: [master]
   pull_request:
-    branches: ["master"]
+    branches: [master]
 
 jobs:
   build:
-    runs-on: ububtu-latest
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
