@@ -32,7 +32,7 @@ test ('abort mock test' ,async({page}) => {
     await page.screenshot ({path: 'window.png'});
 });
 
-test.only ('fallback mock test' ,async({page}) => {
+test ('fallback mock test' ,async({page}) => {
     await page.route('**/*.css', route=>{
         console.log ("First handler");
         route.continue();

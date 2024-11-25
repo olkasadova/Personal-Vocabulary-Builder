@@ -20,9 +20,9 @@ export default class MainVocabularyReminder extends BasePage{
         await this.reviewWordsButton.click();
     }
     public async clickViewSynonymsButton(){
-        await this.viewSynonymsButton.click();
+        await this.viewSynonymsButton.first().click();
     }
     public async clickViewExampleButton(){
-        await this.viewExampleButton.click();
+        await this.viewExampleButton.first().click();
     }
 }
